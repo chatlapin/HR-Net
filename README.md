@@ -6,11 +6,14 @@ https://github.com/chatlapin/P12_Front-end-HR-Net
 <img width="312" alt="Screenshot 2025-01-08 at 21 41 01" src="https://github.com/user-attachments/assets/5ac1769b-882c-4d4c-99f8-a6b04bb4da95" />
 
 # 4 issues
-issue sur les sélecteurs de date, issues de fenêtres modales, issue sur menus déroulants, et issue sur les tableaux. 
+1. issue sur les sélecteurs de date
+2. issues de fenêtres modales
+3. issue sur menus déroulants
+4. issue sur les tableaux. 
 https://github.com/OpenClassrooms-Student-Center/P12_Front-end/issues
 
 # la liste des plugins jQuery 
-https://github.com/xdan/datetimepicker
-https://github.com/kylefox/jquery-modal
-https://github.com/jquery/jquery-ui/blob/main/ui/widgets/selectmenu.js
-https://github.com/DataTables/DataTables
+1. https://github.com/xdan/datetimepicker
+2. https://github.com/kylefox/jquery-modal
+3. https://github.com/jquery/jquery-ui/blob/main/ui/widgets/selectmenu.js
+4. https://github.com/DataTables/DataTables
