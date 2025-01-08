@@ -1,8 +1,8 @@
 import { useDispatch } from 'react-redux'
-import NewEmployeeForm from '../components/NewEmployeeForm/NewEmployeeForm'
+import NewEmployeeForm from '../components/NewEmployeeForm'
 import { useEffect, useState } from 'react'
 import { changeCurrentPage } from '../app/navSlice'
-import Modal from '../components/Modal/Modal'
+import Modal from '../components/Modal'
 
 function Home() {
     const dispatch = useDispatch()
