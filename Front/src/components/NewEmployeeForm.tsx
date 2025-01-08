@@ -1,9 +1,9 @@
-import stateList from '../../data/state.json'
-import departmentList from '../../data/department.json'
+import stateList from '../data/state.json'
+import departmentList from '../data/department.json'
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
-import { addNewEmployee } from '../../app/employeesSlice'
-import { formValidationRules } from '../../utils/formValidation'
+import { addNewEmployee } from '../app/employeeSlice'
+import { formValidationRules } from '../utils/formValidation'
 
 type FormData = {
     firstName: string

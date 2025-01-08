@@ -1,6 +1,6 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit'
-import { navReducer } from './navSlice'
-import { employeesReducer } from './employeesSlice'
+import navReducer from './navSlice'
+import { employeesReducer } from '../app/employeeSlice'
 
 const state = {}
 
