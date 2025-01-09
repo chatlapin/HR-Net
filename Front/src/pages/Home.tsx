@@ -23,6 +23,7 @@ function Home() {
                     View current employees
                 </button>
                 <section>
+                    <h1>Create Employee</h1>
                     <NewEmployeeForm setModalOpen={setModalOpen} />
                 </section>
             </main>
