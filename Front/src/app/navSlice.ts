@@ -1,25 +1,33 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit'
+import { createSlice } from '@reduxjs/toolkit'
 
-interface NavState {
-  currentPage: string
+interface State {
+    nav: { currentPage: string }
 }
 
-const initialState: NavState = {
-  currentPage: 'home'
+const initialState = {
+    currentPage: 'HR Net',
 }
+document.title = initialState.currentPage
 
 export const navSlice = createSlice({
-  name: 'nav',
-  initialState,
-  reducers: {
-    changeCurrentPage: (state, action: PayloadAction<string>) => {
-      state.currentPage = action.payload
-    }
-  }
+    name: 'nav',
+    initialState,
+    reducers: {
+        changeCurrentPage(state, action) {
+            state.currentPage = action.payload
+            document.title = state.currentPage
+        },
+    },
 })
 
-// Export actions
+// selectors
+
+export const getCurrentPage = (state: State) => state.nav.currentPage
+
+// actions
+
 export const { changeCurrentPage } = navSlice.actions
 
-// Export reducer
-export default navSlice.reducer
+// reducers
+
+export const navReducer = navSlice.reducer

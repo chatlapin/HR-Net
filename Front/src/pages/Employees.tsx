@@ -1,13 +1,11 @@
-import { useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { changeCurrentPage } from '../app/navSlice'
-import { getEmployees } from '../app/employeeSlice'
-//import { DataTable } from '../utils/useSortableTable' // Add this import
+import { useSelector } from 'react-redux'
+import { getEmployees } from '../app/employeesSlice'
+import Table from '@daddyjanno/simple-table-comp'
+import { useNavigate } from 'react-router-dom'
 
 export type EmployeeType = {
     [index: string]: string
 }
-
 export type Column = {
     label: string
     accessor: string
@@ -24,25 +22,33 @@ function Employees() {
         { label: 'Street', accessor: 'street', sortable: true },
         { label: 'City', accessor: 'city', sortable: true },
         { label: 'State', accessor: 'state', sortable: true },
-        { label: 'Zip Code', accessor: 'zipCode', sortable: true }
+        { label: 'Zip Code', accessor: 'zipCode', sortable: true },
     ]
 
-    const dispatch = useDispatch()
-    const employees = useSelector((state: any) => state.employee.employees)
+    const data = useSelector(getEmployees)
+    const navigate = useNavigate()
+    // const data = []
 
-    useEffect(() => {
-        dispatch(changeCurrentPage('Employees'))
-        dispatch(getEmployees())
-    }, [dispatch])
+    const handleClickHome = (e: React.MouseEvent<HTMLSpanElement>) => {
+        e.preventDefault()
+        navigate('/')
+    }
 
     return (
-        <div>
-            <h1>Current Employees</h1>
-            <DataTable 
-                columns={columns}
-                data={employees}
-            />
-        </div>
+        <main>
+            <span id="viewHome" onClick={(e) => handleClickHome(e)}>
+                Home
+            </span>
+            <div className="tableContainer">
+                <Table
+                    caption={'Current Employees'}
+                    data={data}
+                    columns={columns}
+                    showEntries={true}
+                    showSearch={true}
+                />
+            </div>
+        </main>
     )
 }
 
