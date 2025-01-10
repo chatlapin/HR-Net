@@ -18,11 +18,11 @@ https://github.com/OpenClassrooms-Student-Center/P12_Front-end/issues
 3. https://github.com/jquery/jquery-ui/blob/main/ui/widgets/selectmenu.js
 4. https://github.com/DataTables/DataTables
 
-#Lighthouse
+# Lighthouse
 Google-Inspect
 navigate-desktop-categories all
 
-#npm package (Create an account on npmjs.com)
+# npm package (Create an account on npmjs.com)
 1.package.json: (1) Replace with your "unique" library name and (2) library version
 2. npm login
 3. npm run build
