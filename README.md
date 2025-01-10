@@ -23,7 +23,7 @@ Google-Inspect
 navigate-desktop-categories all
 
 # npm package (Create an account on npmjs.com)
-1.package.json: (1) Replace with your "unique" library name and (2) library version
+1. package.json: (1) Replace with your "unique" library name and (2) library version
 2. npm login
 3. npm run build
 4. npm publish
