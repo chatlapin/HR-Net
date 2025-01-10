@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux'
 import { getEmployees } from '../app/employeesSlice'
-import Table from 'chatlapin-table'
+import Table from 'chatlapin-simpletable'
 import { useNavigate } from 'react-router-dom'
 
 export type EmployeeType = {
