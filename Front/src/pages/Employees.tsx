@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux'
 import { getEmployees } from '../app/employeesSlice'
-import Table from '@daddyjanno/simple-table-comp'
+import Table from 'chatlapin-table'
 import { useNavigate } from 'react-router-dom'
 
 export type EmployeeType = {
@@ -41,7 +41,7 @@ function Employees() {
             </span>
             <div className="tableContainer">
                 <Table
-                    caption={'Current Employees'}
+                    caption={'Employee List'}
                     data={data}
                     columns={columns}
                     showEntries={true}

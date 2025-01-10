@@ -16,13 +16,11 @@ export const formValidationRules: Form = {
     },
     dateOfBirth: {
         regex: /^\d{4}-(0?[1-9]|1[012])-(0?[1-9]|[12][0-9]|3[01])$/,
-        //errorMessage: 'must be a valid date',
-        errorMessage: 'Please enter valid (DD-MM-YYYY)',
+        errorMessage: 'must be a valid date',
     },
     startDate: {
         regex: /^\d{4}-(0?[1-9]|1[012])-(0?[1-9]|[12][0-9]|3[01])$/,
-       // errorMessage: 'must be a valid date',
-       errorMessage: 'Please enter valid (DD-MM-YYYY)',
+        errorMessage: 'must be a valid date',
     },
     department: {
         regex: /([A-Za-z]+)/,
