@@ -27,4 +27,4 @@ navigate-desktop-categories all
 2. npm login
 3. npm run build
 4. npm publish
-5. Installation: npm i chatlapin-table (https://www.npmjs.com/package/chatlapin-table)
+5. Installation: npm i chatlapin-simpletable (https://www.npmjs.com/package/chatlapin-simpletable)
