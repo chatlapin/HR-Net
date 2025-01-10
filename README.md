@@ -17,3 +17,14 @@ https://github.com/OpenClassrooms-Student-Center/P12_Front-end/issues
 2. https://github.com/kylefox/jquery-modal
 3. https://github.com/jquery/jquery-ui/blob/main/ui/widgets/selectmenu.js
 4. https://github.com/DataTables/DataTables
+
+#Lighthouse
+
+Google-Inspect
+
+Create Employee
+<img width="420" alt="Screenshot 2025-01-09 at 19 10 03" src="https://github.com/user-attachments/assets/d37c966d-6bbf-4fa2-bc1f-6533492cba7f" />
+
+
+Employee List
+<img width="429" alt="Screenshot 2025-01-09 at 19 10 45" src="https://github.com/user-attachments/assets/c366754f-f09f-4320-abdd-49c756a2ff0d" />
